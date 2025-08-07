@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "/Users/mimoriikki/Desktop/cli/post_prompt.sh",
+        "env": {
+          "CLAUDE_CMS_API_TOKEN": "79yd6UurmPhjrNBhr4OJw3FfCONP8etkAPuYJmJ4",
+          "CLAUDE_CMS_USER": "mimori@landbridge.co.jp",
+          "CLAUDE_CMS_URL": "https://cli-r4ucjtf7x-land-bridge.vercel.app"
+        }
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(./setup_claude_cms_all.sh:*)"
+    ],
+    "deny": []
+  }
+}

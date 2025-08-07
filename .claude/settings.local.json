@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(npx supabase:*)",
+      "Bash(echo:*)",
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(npm run dev:*)",
+      "Bash(node:*)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(chmod:*)",
+      "Bash(cp:*)",
+      "Bash(claude \"テスト: Desktopディレクトリからのプロンプトが保存されるか確認\")",
+      "Bash(git commit:*)",
+      "Bash(source:*)",
+      "Bash(SUPABASE_SERVICE_ROLE_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBqYWxqamtjb3ZkcmFrdW5weHVnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzI2NDE1MywiZXhwIjoyMDY4ODQwMTUzfQ.JXIhb2iYs-8bJ_fPhFzV_k3fBJA5K1NCSDOoF5tkAJI\" node check_tamogami.js)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx --yes create-next-app ai-internalization-lp-nextjs --typescript --tailwind --app --eslint --no-src --import-alias \"@/*\" --use-npm --yes)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Bash(npx tailwindcss init:*)",
+      "Bash(mkdir:*)",
+      "Bash(kill:*)",
+      "Bash(npm run build:*)"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/mimoriikki/Desktop/cli/post_prompt.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
