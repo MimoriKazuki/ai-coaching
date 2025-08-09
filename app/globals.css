@@ -181,6 +181,15 @@ html {
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -214,4 +223,8 @@ html {
 
 .animate-skew-pulse {
   animation: skewPulse 4s var(--ease-wobbly) infinite;
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }

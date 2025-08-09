@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import CrisisSection from '@/components/CrisisSection'
 import AuthoritySection from '@/components/AuthoritySection'
+import MediaSection from '@/components/MediaSection'
 import SolutionSection from '@/components/SolutionSection'
 import ResultsSection from '@/components/ResultsSection'
 import ServiceSection from '@/components/ServiceSection'
@@ -63,6 +64,7 @@ export default function Home() {
       <ResultsSection />
       <ServiceSection />
       <AuthoritySection />
+      <MediaSection />
       <WhyUsSection />
       <AboutSection />
       <PricingSection />

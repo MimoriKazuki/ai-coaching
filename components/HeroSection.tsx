@@ -8,8 +8,8 @@ import SectionHeader from './ui/SectionHeader'
 
 const HeroSection = () => {
   const stats = [
-    { label: '受講企業数', value: '200社超', detail: '大手から中小企業まで' },
-    { label: '成功率', value: '98%', detail: '受講企業の満足度' },
+    { label: 'AI活用実績', value: '5年以上', detail: '豊富な導入経験' },
+    { label: '専門講師', value: '10名+', detail: 'AI実務経験者のみ' },
     { label: '平均習得期間', value: '2週間', detail: '実務レベル到達まで' }
   ]
 

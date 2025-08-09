@@ -16,7 +16,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -175,21 +175,15 @@ const ContactForm = () => {
           <label htmlFor="position" className="block text-sm font-medium text-gray-700 tracking-wider uppercase mb-3">
             POSITION
           </label>
-          <select
+          <input
+            type="text"
             id="position"
             name="position"
             value={formData.position}
             onChange={handleChange}
-            className="w-full px-4 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:ring-0 transition-all duration-300 bg-transparent text-gray-900 font-light"
-          >
-            <option value="">選択してください</option>
-            <option value="経営者・役員">経営者・役員</option>
-            <option value="IT部門責任者">IT部門責任者</option>
-            <option value="事業部長">事業部長</option>
-            <option value="マネージャー">マネージャー</option>
-            <option value="担当者">担当者</option>
-            <option value="その他">その他</option>
-          </select>
+            className="w-full px-4 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:ring-0 transition-all duration-300 bg-transparent text-gray-900 placeholder-gray-400 font-light"
+            placeholder="役職（例：代表取締役、部長、マネージャー）"
+          />
         </motion.div>
 
         <motion.div
@@ -219,14 +213,12 @@ const ContactForm = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <motion.button
+          <button
             type="submit"
             disabled={isSubmitting}
             className={`bg-gray-900 text-white font-medium tracking-wider px-12 py-4 transition-all duration-300 ${
-              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-800'
+              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-800 hover:shadow-lg'
             }`}
-            whileHover={!isSubmitting ? { scale: 1.05 } : {}}
-            whileTap={!isSubmitting ? { scale: 0.95 } : {}}
           >
             {isSubmitting ? (
               <span className="flex items-center gap-3">
@@ -234,14 +226,9 @@ const ContactForm = () => {
                 SENDING...
               </span>
             ) : (
-              <motion.span
-                whileHover={{ letterSpacing: '0.1em' }}
-                transition={{ duration: 0.2 }}
-              >
-                SEND MESSAGE
-              </motion.span>
+              'SEND MESSAGE'
             )}
-          </motion.button>
+          </button>
 
           <motion.p 
             className="text-xs text-gray-500 text-center font-light"

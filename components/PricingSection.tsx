@@ -30,7 +30,7 @@ const PricingSection = () => {
     },
     {
       name: 'PREMIUM',
-      price: '70',
+      price: '要相談',
       features: [
         '週2回以上の集中研修',
         '専任コンサルタント配置',
@@ -101,10 +101,12 @@ const PricingSection = () => {
                     
                     {/* Price */}
                     <div className="mb-8">
-                      <span className="text-6xl font-thin text-gray-900">
+                      <span className={plan.price === '要相談' ? "text-3xl font-light text-gray-900" : "text-6xl font-thin text-gray-900"}>
                         {plan.price}
                       </span>
-                      <span className="text-lg text-gray-500 ml-2">万円/月</span>
+                      {plan.price !== '要相談' && (
+                        <span className="text-lg text-gray-500 ml-2">万円/月</span>
+                      )}
                     </div>
                     
                     {/* Features */}
