@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: https://landbridge.jp/sitemap.xml
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0

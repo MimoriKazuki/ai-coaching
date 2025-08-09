@@ -30,7 +30,9 @@
       "Bash(npx tailwindcss init:*)",
       "Bash(mkdir:*)",
       "Bash(kill:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(sed:*)",
+      "Bash(lsof:*)"
     ],
     "deny": []
   },
