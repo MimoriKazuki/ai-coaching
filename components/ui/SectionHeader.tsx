@@ -36,4 +36,5 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   )
 }
 
-export default SectionHeader// Trigger rebuild Tue Aug 12 15:05:32 JST 2025
+export default SectionHeader
+// Trigger rebuild Tue Aug 12 15:05:32 JST 2025

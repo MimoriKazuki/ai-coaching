@@ -32,7 +32,8 @@
       "Bash(kill:*)",
       "Bash(npm run build:*)",
       "Bash(sed:*)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "Bash(git config:*)"
     ],
     "deny": []
   },
