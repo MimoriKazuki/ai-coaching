@@ -14,17 +14,28 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          background: '#3B5998',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           color: 'white',
-          borderRadius: '6px',
+          borderRadius: '4px',
         }}
       >
-        <div style={{ fontWeight: 700 }}>L</div>
+        <svg 
+          width="24" 
+          height="24" 
+          viewBox="0 0 32 32"
+          fill="white"
+        >
+          <circle cx="6" cy="26" r="3" />
+          <circle cx="16" cy="6" r="3" />
+          <circle cx="26" cy="16" r="3" />
+          <path d="M6 26 L16 6" stroke="white" strokeWidth="2" fill="none" />
+          <path d="M16 6 L26 16" stroke="white" strokeWidth="2" fill="none" />
+        </svg>
       </div>
     ),
     {

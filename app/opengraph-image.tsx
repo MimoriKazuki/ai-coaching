@@ -36,16 +36,29 @@ export default async function Image() {
             padding: '40px',
           }}
         >
-          <div
-            style={{
-              fontSize: '42px',
-              fontWeight: 300,
-              letterSpacing: '0.2em',
-              marginBottom: '30px',
-              opacity: 0.9,
-            }}
-          >
-            LANDBRIDGE
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '30px', gap: '20px' }}>
+            <svg 
+              width="60" 
+              height="60" 
+              viewBox="0 0 100 100"
+              fill="none"
+            >
+              <circle cx="20" cy="80" r="10" fill="#667eea" />
+              <circle cx="50" cy="20" r="10" fill="#667eea" />
+              <circle cx="80" cy="50" r="10" fill="#667eea" />
+              <path d="M20 80 L50 20" stroke="#667eea" strokeWidth="6" />
+              <path d="M50 20 L80 50" stroke="#667eea" strokeWidth="6" />
+            </svg>
+            <div
+              style={{
+                fontSize: '42px',
+                fontWeight: 300,
+                letterSpacing: '0.2em',
+                opacity: 0.9,
+              }}
+            >
+              LANDBRIDGE
+            </div>
           </div>
           <div
             style={{
