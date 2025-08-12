@@ -13,28 +13,35 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 24,
-          background: '#3B5998',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          borderRadius: '4px',
+          background: 'linear-gradient(135deg, #3B5998 0%, #4A69BD 100%)',
+          borderRadius: '6px',
         }}
       >
         <svg 
-          width="24" 
-          height="24" 
-          viewBox="0 0 32 32"
-          fill="white"
+          width="26" 
+          height="26" 
+          viewBox="0 0 100 100"
+          fill="none"
         >
-          <circle cx="6" cy="26" r="3" />
-          <circle cx="16" cy="6" r="3" />
-          <circle cx="26" cy="16" r="3" />
-          <path d="M6 26 L16 6" stroke="white" strokeWidth="2" fill="none" />
-          <path d="M16 6 L26 16" stroke="white" strokeWidth="2" fill="none" />
+          {/* ネットワークグラフのノード */}
+          <circle cx="20" cy="75" r="8" fill="white" />
+          <circle cx="50" cy="25" r="8" fill="white" />
+          <circle cx="80" cy="55" r="8" fill="white" />
+          
+          {/* 接続線 */}
+          <path d="M20 75 L50 25" stroke="white" strokeWidth="4" strokeLinecap="round" />
+          <path d="M50 25 L80 55" stroke="white" strokeWidth="4" strokeLinecap="round" />
+          <path d="M20 75 L80 55" stroke="white" strokeWidth="4" strokeLinecap="round" opacity="0.5" />
+          
+          {/* ノードの中心点（アクセント） */}
+          <circle cx="20" cy="75" r="3" fill="#3B5998" />
+          <circle cx="50" cy="25" r="3" fill="#3B5998" />
+          <circle cx="80" cy="55" r="3" fill="#3B5998" />
         </svg>
       </div>
     ),
