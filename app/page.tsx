@@ -56,8 +56,8 @@ export default function Home() {
         }}
       />
       
+    <Header />
     <main className="overflow-x-hidden">
-      <Header />
       <HeroSection />
       <CrisisSection />
       <SolutionSection />
