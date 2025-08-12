@@ -20,11 +20,13 @@ const Header = () => {
   }, [])
 
   const navigation = [
-    { name: 'サービス', href: '#service' },
-    { name: '選ばれる3つの理由', href: '#why-us' },
-    { name: '代表メッセージ', href: '#about' },
+    { name: '課題認識', href: '#crisis' },
     { name: '実績', href: '#results' },
+    { name: 'サービス', href: '#service' },
+    { name: '選ばれる理由', href: '#why-us' },
+    { name: '代表紹介', href: '#about' },
     { name: '料金', href: '#pricing' },
+    { name: 'FAQ', href: '#faq' },
   ]
 
   return (
@@ -53,7 +55,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-12">
+          <nav className="hidden lg:flex items-center gap-8">
             {navigation.map((item, index) => (
               <motion.div
                 key={item.name}
@@ -63,7 +65,7 @@ const Header = () => {
               >
                 <Link
                   href={item.href}
-                  className={`relative text-sm tracking-wider font-light transition-colors duration-300 ${
+                  className={`relative text-xs tracking-wider font-light transition-colors duration-300 ${
                     isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-700 hover:text-gray-900'
                   }`}
                 >
