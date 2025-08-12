@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
 
-export const alt = 'LANDBRIDGE AIコーチングプログラム'
+export const alt = 'LandBridge AIコーチングプログラム'
 export const size = {
   width: 1200,
   height: 630,
@@ -57,7 +57,7 @@ export default async function Image() {
                 opacity: 0.9,
               }}
             >
-              LANDBRIDGE
+              LandBridge
             </div>
           </div>
           <div

@@ -47,7 +47,7 @@ const Header = () => {
               transition={{ duration: 0.2 }}
             >
               <span className={`${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>
-                LANDBRIDGE
+                LandBridge
               </span>
             </motion.div>
           </Link>

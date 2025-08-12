@@ -38,7 +38,7 @@ export default function AppleIcon() {
           <path d="M50 20 L80 50" stroke="white" strokeWidth="6" />
         </svg>
         <div style={{ fontSize: '24px', fontWeight: 700, marginTop: '10px', letterSpacing: '2px' }}>
-          LANDBRIDGE
+          LandBridge
         </div>
       </div>
     ),
