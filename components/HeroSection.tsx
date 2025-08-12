@@ -8,8 +8,7 @@ import SectionHeader from './ui/SectionHeader'
 
 const HeroSection = () => {
   const stats = [
-    { label: 'AI活用実績', value: '5年以上', detail: '豊富な導入経験' },
-    { label: '専門講師', value: '10名+', detail: 'AI実務経験者のみ' },
+    { label: 'AI活用実績', value: '多数', detail: '豊富な導入経験' },
     { label: '平均習得期間', value: '2週間', detail: '実務レベル到達まで' }
   ]
 
@@ -103,7 +102,7 @@ const HeroStats = ({ stats }: { stats: Array<{ label: string; value: string; det
     
     <div className="mt-12 text-center">
       <p className="text-sm text-gray-500 font-light tracking-wider">
-        ※ 2024年実績データ
+        ※ 2025年実績データ
       </p>
     </div>
   </motion.div>

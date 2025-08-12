@@ -7,12 +7,12 @@ const MediaSection = () => {
     { name: '朝日新聞', logo: '朝日新聞' },
     { name: '毎日新聞', logo: '毎日新聞' },
     { name: '産経新聞', logo: '産経新聞' },
-    { name: '日本経済新聞', logo: '日経新聞' },
+    { name: 'NewsPicks', logo: 'NewsPicks' },
     { name: 'ラジオ日本', logo: 'ラジオ日本' },
     { name: '週刊BCN', logo: '週刊BCN' },
     { name: 'ENCOUNT', logo: 'ENCOUNT' },
     { name: 'Yahoo!ニュース', logo: 'Yahoo!ニュース' },
-    { name: 'NewsPicks', logo: 'NewsPicks' }
+    { name: '日本経済新聞', logo: '日経新聞' }
   ]
 
   return (
