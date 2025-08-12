@@ -6,6 +6,7 @@ import MediaSection from '@/components/MediaSection'
 import SolutionSection from '@/components/SolutionSection'
 import ResultsSection from '@/components/ResultsSection'
 import ServiceSection from '@/components/ServiceSection'
+import TestimonialsSection from '@/components/TestimonialsSection'
 import WhyUsSection from '@/components/WhyUsSection'
 import AboutSection from '@/components/AboutSection'
 import PricingSection from '@/components/PricingSection'
@@ -63,6 +64,7 @@ export default function Home() {
       <SolutionSection />
       <ResultsSection />
       <ServiceSection />
+      <TestimonialsSection />
       <AuthoritySection />
       <MediaSection />
       <WhyUsSection />

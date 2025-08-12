@@ -23,6 +23,7 @@ const Header = () => {
     { name: '課題認識', href: '#crisis' },
     { name: '実績', href: '#results' },
     { name: 'サービス', href: '#service' },
+    { name: '受講者の声', href: '#testimonials' },
     { name: '選ばれる理由', href: '#why-us' },
     { name: '代表紹介', href: '#about' },
     { name: '料金', href: '#pricing' },
